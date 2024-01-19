@@ -3,6 +3,9 @@ package com.nowcoder.community;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author 阿叙
+ */
 @SpringBootApplication
 public class CommunityApplication {
 
