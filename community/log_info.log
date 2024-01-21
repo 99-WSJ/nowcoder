@@ -1,0 +1,11 @@
+2024-01-21 16:04:26,817 INFO [main] LoggerTests [StartupInfoLogger.java:55] Starting LoggerTests using Java 1.8.0_281 on DESKTOP-6O517MT with PID 11284 (started by Administrator in I:\pro_code\Java\niukeWeb)
+2024-01-21 16:04:26,819 INFO [main] LoggerTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-21 16:04:27,964 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2024-01-21 16:04:28,221 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:983] {dataSource-1} inited
+2024-01-21 16:04:29,549 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-21 16:04:29,690 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2024-01-21 16:04:30,125 INFO [main] LoggerTests [StartupInfoLogger.java:61] Started LoggerTests in 3.799 seconds (JVM running for 7.989)
+2024-01-21 16:04:30,361 INFO [main] LoggerTests [LoggerTests.java:21] info log
+2024-01-21 16:04:30,377 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-21 16:04:30,378 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2024] {dataSource-1} closing ...
+2024-01-21 16:04:30,380 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2096] {dataSource-1} closed
