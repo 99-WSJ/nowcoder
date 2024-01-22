@@ -54,4 +54,6 @@ public class HomeController {
         System.out.println("Request received for page: " + page.getCurrent());
         return "/index";
     }
+
+
 }
