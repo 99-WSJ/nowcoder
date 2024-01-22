@@ -14,4 +14,29 @@
         where id=#{id}
     </select>
 
+    <select id="selectByName" resultType="com.nowcoder.community.entity.User">
+        select
+        <include refid="selectFields"/>
+        from user
+        where username=#{username}
+    </select>
+
+    <select id="selectByEmail" resultType="com.nowcoder.community.entity.User">
+        select
+        <include refid="selectFields"/>
+        from user
+        where email=#{email}
+    </select>
+
+    <insert id="insertUser" parameterType="com.nowcoder.community.entity.User">
+        insert into user (username, password, salt, email, type, status, activation_code, header_url, create_time)
+        values (#{username}, #{password}, #{salt}, #{email}, #{type}, #{status}, #{activationCode}, #{headerUrl}, #{createTime})
+    </insert>
+
+    <update id="updateStatus" parameterType="map">
+        update user
+        set status = #{status}
+        where id = #{userId}
+    </update>
+
 </mapper>

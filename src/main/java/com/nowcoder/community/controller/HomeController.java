@@ -8,15 +8,12 @@ import com.nowcoder.community.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@RequestMapping("/community")
 @Controller
 public class HomeController {
     @Autowired
@@ -37,7 +34,7 @@ public class HomeController {
         // 所以，在thymeleaf中可以直接访问Page对象中的数据
         page.setRows(discussPostService.findDiscussPostRows(0));
         // 页面复用路径
-        page.setPath("/community/index");
+        page.setPath("/index");
 
         List<DiscussPost> list = discussPostService.findDiscussPosts(0, page.getOffset(), page.getLimit());
         List<Map<String,Object>> discussPosts = new ArrayList<>();
