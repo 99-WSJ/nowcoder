@@ -1,0 +1,14 @@
+2024-01-22 17:19:53,663 INFO [main] c.n.c.LoggerTests [StartupInfoLogger.java:50] Starting LoggerTests on DESKTOP-DCDRI2J with PID 19388 (started by wsj in F:\JAVA\JAVA项目\仿牛客论坛\nowcoder\community)
+2024-01-22 17:19:53,666 INFO [main] c.n.c.LoggerTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-22 17:19:56,697 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-22 17:19:56,984 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2024-01-22 17:19:57,284 INFO [main] c.n.c.LoggerTests [StartupInfoLogger.java:59] Started LoggerTests in 4.11 seconds (JVM running for 4.939)
+2024-01-22 17:19:57,745 INFO [main] c.n.c.LoggerTests [LoggerTests.java:30] info
+2024-01-22 17:19:57,755 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-22 17:22:41,744 INFO [main] c.n.c.LoggerTests [StartupInfoLogger.java:50] Starting LoggerTests on DESKTOP-DCDRI2J with PID 6556 (started by wsj in F:\JAVA\JAVA项目\仿牛客论坛\nowcoder\community)
+2024-01-22 17:22:41,751 INFO [main] c.n.c.LoggerTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-22 17:22:45,140 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:171] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-22 17:22:45,785 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:61] Adding welcome page template: index
+2024-01-22 17:22:46,322 INFO [main] c.n.c.LoggerTests [StartupInfoLogger.java:59] Started LoggerTests in 5.032 seconds (JVM running for 6.061)
+2024-01-22 17:22:46,587 INFO [main] c.n.c.LoggerTests [LoggerTests.java:30] info
+2024-01-22 17:22:46,599 INFO [Thread-3] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:208] Shutting down ExecutorService 'applicationTaskExecutor'
