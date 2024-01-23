@@ -1,14 +1,17 @@
 package com.nowcoder.community.controller;
 
 import com.nowcoder.community.service.AlphaService;
+import com.nowcoder.community.utils.CommunityUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.*;
@@ -122,6 +125,55 @@ public class AlphaController {
         list.add(emp);
         list.add(emp);
         return list;
+    }
+
+    //cookie示例
+    // 少量数据字符串等  因为需要来回传，需要大量的数据，影响性能，需要到客户端 客户端只能识别字符串
+
+    @RequestMapping(path = "/cookie/set", method = RequestMethod.GET)
+    @ResponseBody
+    public String setCookie(HttpServletResponse response) {
+        //创建cookie
+        Cookie cookie = new Cookie("code", CommunityUtil.generateUUID());
+        //设置cookie的生效时间
+        cookie.setPath("/community/alpha");
+        // 设置cookie的生存时间
+        cookie.setMaxAge(60 * 10);
+        response.addCookie(cookie);
+        // e9a22063548744cfb7d80b294b723159  response
+        //
+
+        return "set cookie";
+    }
+
+    @RequestMapping(path = "/cookie/get", method = RequestMethod.GET)
+    @ResponseBody
+    public String getCookie(@CookieValue("code") String code) {
+        System.out.println(code);
+        return "get cookie";
+    }
+
+    // session示例
+    // session因为存在于服务器所以可以存任何类型的数据，也可以存很多。
+    // 响应的时候服务器自动的向浏览器发送了一份Cookie,包含session ID
+    // 响应头：Set-Cookie : JSESSIONID=0F26D266EBBA3B7593D0D5765FB72F34; Path=/community; HttpOnly
+    @RequestMapping(path = "/session/set", method = RequestMethod.GET)
+    @ResponseBody
+    public String setSession(HttpSession session) {
+        session.setAttribute("id", 1);
+        session.setAttribute("name", "Test");
+        return "set Session";
+    }
+
+    // 请求头包含：JSESSIONID=0F26D266EBBA3B7593D0D5765FB72F34
+    @RequestMapping(path = "/session/get", method = RequestMethod.GET)
+    @ResponseBody
+    public String getSession(HttpSession session) {
+        System.out.println(session.getAttribute("id"));
+        System.out.println(session.getAttribute("name"));
+
+        return "get session";
+
     }
 
 
