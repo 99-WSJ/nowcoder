@@ -13,7 +13,7 @@ import java.util.UUID;
 public class CommunityUtil {
     // 生成随机字符串
     public static String generateUUID() {
-        return UUID.randomUUID().toString().replaceAll("~", "");
+        return UUID.randomUUID().toString().replaceAll("-", "");
     }
     //MD5加密
     //只加密。不解密 Hello ->> abc123def456

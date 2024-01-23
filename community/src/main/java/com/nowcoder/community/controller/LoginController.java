@@ -50,8 +50,7 @@ public class LoginController implements CommunityConstant {
         }
     }
 
-    // http://localhost:8080/community/activation/101/code
-    // http://localhost:8080/community/activation158/4c89ca7e-6dc4-44fb-98bd-30a758292ac5
+    // http://localhost:8080/community/activation/158/4c89ca7e-6dc4-44fb-98bd-30a758292ac5
     @RequestMapping(path = "/activation/{userId}/{code}", method = RequestMethod.GET)
     public String activation(Model model, @PathVariable("userId")int userId, @PathVariable("code")String code) {
         int result = userService.activation(userId, code);
