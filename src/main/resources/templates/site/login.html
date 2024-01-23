@@ -91,8 +91,9 @@
 							</div>
 						</div>
 						<div class="col-sm-4">
-							<img th:src="@{/img/captcha.png}" style="width:100px;height:40px;" class="mr-2"/>
-							<a href="javascript:;" class="font-size-12 align-bottom">刷新验证码</a>
+							<!-- 验证码  /kaptcha 在这个路径下面. 通过这个refresh_kaptcha来进行更新-->
+							<img th:src="@{/kaptcha}" id="kaptcha" style="width:100px;height:40px;" class="mr-2"/>
+							<a href="javascript:refresh_kaptcha()" class="font-size-12 align-bottom">刷新验证码</a>
 						</div>
 					</div>				
 					<div class="form-group row mt-4">
@@ -179,5 +180,15 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
 	<script th:src="@{/js/global.js}"></script>
+
+	<script>
+		// 刷新验证码
+		function refresh_kaptcha() {
+			// 获取验证码图片  /kaptcha 后端的请求
+			var path = CONTEXT_PATH+"/kaptcha?p="+Math.random();
+			// 设置其src属性  kaptcha 前端的id
+			$("#kaptcha").attr("src", path);
+		}
+	</script>
 </body>
 </html>
