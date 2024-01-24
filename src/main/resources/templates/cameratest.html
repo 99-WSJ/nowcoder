@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RTSP to HTML</title>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+</head>
+<body>
+<video id="video" controls></video>
+
+<script>
+      if (Hls.isSupported()) {
+        console.log('hello hls.js!');
+      }
+    </script>
+
+<script>
+  if(Hls.isSupported()) {
+    console.log('hello hls.js!');
+    var video = document.getElementById('video');
+    var hls = new Hls();
+    hls.loadSource('rtsp://admin:ttt704666@192.168.1.102:554//Streaming/Channels/101');
+    console.log('hello hls.js!'+hls);
+    hls.attachMedia(video);
+  }
+  else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = 'rtsp://admin:ttt704666@192.168.1.102:554//Streaming/Channels/101';
+  }
+</script>
+</body>
+</html>

@@ -1033,3 +1033,57 @@ java.lang.NullPointerException: null
 2024-01-24 10:39:56,670 ERROR [http-nio-8080-exec-8] c.n.c.u.MailClient [MailClient.java:55] 发送邮件失败: Failed messages: com.sun.mail.smtp.SMTPSendFailedException: 550 The recipient may contain a non-existent account, please check the recipient address.
 
 2024-01-24 10:42:42,777 ERROR [http-nio-8080-exec-1] c.a.d.p.DruidAbstractDataSource [DruidAbstractDataSource.java:1481] discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/niuke_community?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, jdbcUrl : jdbc:mysql://localhost:3306/niuke_community?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true, lastPacketReceivedIdleMillis : 68134
+2024-01-24 15:09:19,193 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field alphaInterceptor in com.nowcoder.community.config.WebMvcConfig required a bean of type 'com.nowcoder.community.controller.interceptor.AlphaInterceptor' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.nowcoder.community.controller.interceptor.AlphaInterceptor' in your configuration.
+
+2024-01-24 15:32:10,108 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field alphaInterceptor in com.nowcoder.community.config.WebMvcConfig required a bean of type 'com.nowcoder.community.controller.interceptor.AlphaInterceptor' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.nowcoder.community.controller.interceptor.AlphaInterceptor' in your configuration.
+
+2024-01-24 15:34:02,834 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field alphaInterceptor in com.nowcoder.community.config.WebMvcConfig required a bean of type 'com.nowcoder.community.controller.interceptor.AlphaInterceptor' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.nowcoder.community.controller.interceptor.AlphaInterceptor' in your configuration.
+
