@@ -1,2 +1,0 @@
-# nowcoder
-nowcoder_community
