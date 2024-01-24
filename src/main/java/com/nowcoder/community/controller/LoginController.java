@@ -151,4 +151,14 @@ public class LoginController implements CommunityConstant {
         }
     }
 
+    /**
+     * 退出
+     * @param ticket
+     */
+    @GetMapping("/logout")
+    public String logout(@CookieValue("ticket") String ticket){
+        userService.logout(ticket);
+        return "redirect:/login";
+    }
+
 }
