@@ -8,9 +8,11 @@ import com.nowcoder.community.util.CommunityUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.apache.commons.lang.StringUtils;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.Cookie;
@@ -32,6 +34,9 @@ public class LoginController implements CommunityConstant {
 
     @Autowired
     private Producer kaptchaProducer;
+
+    @Value("${server.servlet.context-path}")
+    private String contextPath;
 
     /**
      * 注册页面
@@ -114,6 +119,36 @@ public class LoginController implements CommunityConstant {
             logger.error("响应验证码失败："+e.getMessage());
         }
 
+    }
+
+    @PostMapping("/login")
+    public String login(String username,String password,String code,boolean rememberMe,
+                        Model model,HttpSession session,HttpServletResponse response){
+        // 先判断验证码是否正确
+        String kaptcha = (String)session.getAttribute("kaptcha");
+        // kaptcha.equalsIgnoreCase 是否一致，忽略大小写
+        if(StringUtils.isBlank(kaptcha) || StringUtils.isBlank(code) || !kaptcha.equalsIgnoreCase(code)){
+            model.addAttribute("codeMsg","验证码不正确");
+            return "/site/login";
+        }
+        // 检查账号,密码
+        int expiredSeconds = rememberMe ? REMEMBER_EXPIRED_SECOND:DEFAULT_EXPIRED_SECONDS;
+        Map<String, Object> map = userService.login(username, password, expiredSeconds);
+        if(map.containsKey("ticket")){
+            Cookie cookie =new Cookie("ticket",map.get("ticket").toString());
+            // cookie 整个目录都有效
+            cookie.setPath(contextPath);
+            cookie.setMaxAge(expiredSeconds);
+            // 发送给页面
+            response.addCookie(cookie);
+            // 重定向到首页
+            return "redirect:/index";
+        }else{
+            model.addAttribute("usernameMsg",map.get("usernameMsg"));
+            model.addAttribute("passwordMsg",map.get("passwordMsg"));
+            // 依旧是在登录页面
+            return "/site/login";
+        }
     }
 
 }

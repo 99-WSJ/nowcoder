@@ -1,4 +1,6 @@
 import com.nowcoder.community.communityApplication;
+import com.nowcoder.community.dao.LoginTicketMapper;
+import com.nowcoder.community.entity.LoginTicket;
 import com.nowcoder.community.util.MailClient;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,6 +10,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
+
+import java.util.Date;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -32,4 +36,25 @@ public class mailTest {
         System.out.println(context);
         mailClient.sendMail("2137746787@qq.com", "html", content);
     }
+
+    @Autowired
+    private LoginTicketMapper loginTicketMapper;
+
+    @Test
+    public void testLoginTicketMapper(){
+        LoginTicket loginTicket = new LoginTicket();
+        loginTicket.setUserId(111);
+        loginTicket.setTicket("dfs");
+        loginTicket.setStatus(0);
+        loginTicket.setExpired(new Date(System.currentTimeMillis()+1000*60*10));
+        loginTicketMapper.insertLoginTicket(loginTicket);
+
+        loginTicket= loginTicketMapper.selectByTicket("dfs");
+        System.out.println(loginTicket);
+
+        loginTicketMapper.updateStatus("dfs",1);
+        loginTicket= loginTicketMapper.selectByTicket("dfs");
+        System.out.println(loginTicket);
+    }
+
 }
