@@ -28,6 +28,7 @@ public class SensitiveFilter {
     private TrieNode rootNode = new TrieNode();
 
     @PostConstruct
+    // 在对象创建后由容器自动执行,用于完成一些初始化操作,用于在依赖注入完成后执行初始化方法
     public void init() {
         try (
             // 字节流
