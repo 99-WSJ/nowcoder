@@ -1,123 +1,18 @@
-2024-01-25 11:28:28,630 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:55] Starting communityApplication using Java 1.8.0_281 on DESKTOP-6O517MT with PID 33716 (I:\pro_code\Java\niukeWeb\target\classes started by Administrator in I:\pro_code\Java\niukeWeb)
-2024-01-25 11:28:28,651 INFO [main] c.n.c.communityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
-2024-01-25 11:28:29,880 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2024-01-25 11:28:29,890 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2024-01-25 11:28:29,891 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2024-01-25 11:28:29,892 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
-2024-01-25 11:28:29,968 INFO [main] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2024-01-25 11:28:29,968 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1247 ms
-2024-01-25 11:28:30,136 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
-2024-01-25 11:28:30,251 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:983] {dataSource-1} inited
-2024-01-25 11:28:31,051 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2024-01-25 11:28:31,127 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2024-01-25 11:28:31,301 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2024-01-25 11:28:31,326 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2024-01-25 11:28:31,336 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:61] Started communityApplication in 3.228 seconds (JVM running for 5.2)
-2024-01-25 11:31:42,649 INFO [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-25 11:31:42,649 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2024-01-25 11:31:42,650 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
-2024-01-25 11:37:01,482 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2024-01-25 11:37:01,483 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2024] {dataSource-1} closing ...
-2024-01-25 11:37:01,488 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2096] {dataSource-1} closed
-2024-01-25 11:37:06,528 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:55] Starting communityApplication using Java 1.8.0_281 on DESKTOP-6O517MT with PID 52184 (I:\pro_code\Java\niukeWeb\target\classes started by Administrator in I:\pro_code\Java\niukeWeb)
-2024-01-25 11:37:06,532 INFO [main] c.n.c.communityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
-2024-01-25 11:37:07,668 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2024-01-25 11:37:07,679 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2024-01-25 11:37:07,680 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2024-01-25 11:37:07,680 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
-2024-01-25 11:37:07,769 INFO [main] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2024-01-25 11:37:07,770 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1181 ms
-2024-01-25 11:37:07,942 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
-2024-01-25 11:37:08,048 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:983] {dataSource-1} inited
-2024-01-25 11:37:08,783 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2024-01-25 11:37:08,858 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2024-01-25 11:37:08,989 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2024-01-25 11:37:09,019 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2024-01-25 11:37:09,028 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:61] Started communityApplication in 3.051 seconds (JVM running for 3.949)
-2024-01-25 11:37:16,068 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-25 11:37:16,069 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2024-01-25 11:37:16,070 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
-2024-01-25 13:58:54,054 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2024-01-25 13:58:54,055 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2024] {dataSource-1} closing ...
-2024-01-25 13:58:54,057 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2096] {dataSource-1} closed
-2024-01-25 13:58:58,954 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:55] Starting communityApplication using Java 1.8.0_281 on DESKTOP-6O517MT with PID 16504 (I:\pro_code\Java\niukeWeb\target\classes started by Administrator in I:\pro_code\Java\niukeWeb)
-2024-01-25 13:58:58,958 INFO [main] c.n.c.communityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
-2024-01-25 13:59:00,210 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2024-01-25 13:59:00,220 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2024-01-25 13:59:00,221 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2024-01-25 13:59:00,221 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
-2024-01-25 13:59:00,354 INFO [main] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2024-01-25 13:59:00,354 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1337 ms
-2024-01-25 13:59:00,527 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
-2024-01-25 13:59:00,638 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:983] {dataSource-1} inited
-2024-01-25 13:59:01,459 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2024-01-25 13:59:01,528 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2024-01-25 13:59:01,655 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2024-01-25 13:59:01,681 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2024-01-25 13:59:01,692 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:61] Started communityApplication in 3.324 seconds (JVM running for 4.166)
-2024-01-25 13:59:11,957 INFO [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-25 13:59:11,957 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2024-01-25 13:59:11,958 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
-2024-01-25 14:12:11,161 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2024-01-25 14:12:11,162 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2024] {dataSource-1} closing ...
-2024-01-25 14:12:11,167 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2096] {dataSource-1} closed
-2024-01-25 14:12:18,585 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:55] Starting communityApplication using Java 1.8.0_281 on DESKTOP-6O517MT with PID 27680 (I:\pro_code\Java\niukeWeb\target\classes started by Administrator in I:\pro_code\Java\niukeWeb)
-2024-01-25 14:12:18,595 INFO [main] c.n.c.communityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
-2024-01-25 14:12:19,819 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2024-01-25 14:12:19,828 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2024-01-25 14:12:19,829 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2024-01-25 14:12:19,829 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
-2024-01-25 14:12:19,904 INFO [main] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2024-01-25 14:12:19,904 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1251 ms
-2024-01-25 14:12:20,038 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
-2024-01-25 14:12:20,161 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:983] {dataSource-1} inited
-2024-01-25 14:12:20,879 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2024-01-25 14:12:20,957 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2024-01-25 14:12:21,085 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2024-01-25 14:12:21,114 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2024-01-25 14:12:21,124 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:61] Started communityApplication in 3.104 seconds (JVM running for 4.093)
-2024-01-25 14:12:30,037 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-25 14:12:30,038 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2024-01-25 14:12:30,038 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 0 ms
-2024-01-25 14:17:27,080 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2024-01-25 14:17:27,081 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2024] {dataSource-1} closing ...
-2024-01-25 14:17:27,085 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2096] {dataSource-1} closed
-2024-01-25 14:17:33,809 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:55] Starting communityApplication using Java 1.8.0_281 on DESKTOP-6O517MT with PID 18608 (I:\pro_code\Java\niukeWeb\target\classes started by Administrator in I:\pro_code\Java\niukeWeb)
-2024-01-25 14:17:33,813 INFO [main] c.n.c.communityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
-2024-01-25 14:17:34,898 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2024-01-25 14:17:34,908 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2024-01-25 14:17:34,909 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2024-01-25 14:17:34,909 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
-2024-01-25 14:17:34,985 INFO [main] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2024-01-25 14:17:34,985 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1128 ms
-2024-01-25 14:17:35,116 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
-2024-01-25 14:17:35,240 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:983] {dataSource-1} inited
-2024-01-25 14:17:35,958 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2024-01-25 14:17:36,037 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2024-01-25 14:17:36,160 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2024-01-25 14:17:36,188 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2024-01-25 14:17:36,201 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:61] Started communityApplication in 2.874 seconds (JVM running for 3.704)
-2024-01-25 14:20:42,511 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2024-01-25 14:20:42,513 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2024] {dataSource-1} closing ...
-2024-01-25 14:20:42,514 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2096] {dataSource-1} closed
-2024-01-25 14:20:48,615 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:55] Starting communityApplication using Java 1.8.0_281 on DESKTOP-6O517MT with PID 45772 (I:\pro_code\Java\niukeWeb\target\classes started by Administrator in I:\pro_code\Java\niukeWeb)
-2024-01-25 14:20:48,619 INFO [main] c.n.c.communityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
-2024-01-25 14:20:49,712 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2024-01-25 14:20:49,720 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2024-01-25 14:20:49,721 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2024-01-25 14:20:49,722 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
-2024-01-25 14:20:49,800 INFO [main] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2024-01-25 14:20:49,800 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1125 ms
-2024-01-25 14:20:49,941 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
-2024-01-25 14:20:50,063 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:983] {dataSource-1} inited
-2024-01-25 14:20:50,781 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2024-01-25 14:20:50,862 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
-2024-01-25 14:20:50,997 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2024-01-25 14:20:51,021 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
-2024-01-25 14:20:51,032 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:61] Started communityApplication in 2.941 seconds (JVM running for 3.761)
-2024-01-25 14:20:58,492 INFO [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-25 14:20:58,492 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2024-01-25 14:20:58,493 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
-2024-01-25 14:38:21,658 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2024-01-25 14:38:21,659 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2024] {dataSource-1} closing ...
-2024-01-25 14:38:21,662 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2096] {dataSource-1} closed
+2024-01-27 15:23:08,981 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:55] Starting communityApplication using Java 1.8.0_281 on DESKTOP-6O517MT with PID 24248 (I:\pro_code\Java\niukeWeb\target\classes started by Administrator in I:\pro_code\Java\niukeWeb)
+2024-01-27 15:23:09,035 INFO [main] c.n.c.communityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-27 15:23:11,402 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2024-01-27 15:23:11,424 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-27 15:23:11,425 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-01-27 15:23:11,425 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2024-01-27 15:23:11,507 INFO [main] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-01-27 15:23:11,507 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 2316 ms
+2024-01-27 15:23:11,806 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2024-01-27 15:23:12,141 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:983] {dataSource-1} inited
+2024-01-27 15:23:13,238 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-27 15:23:13,394 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2024-01-27 15:23:13,673 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2024-01-27 15:23:13,710 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2024-01-27 15:23:13,721 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:61] Started communityApplication in 6.42 seconds (JVM running for 9.098)
+2024-01-27 15:23:42,166 INFO [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-27 15:23:42,166 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2024-01-27 15:23:42,167 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 1 ms
