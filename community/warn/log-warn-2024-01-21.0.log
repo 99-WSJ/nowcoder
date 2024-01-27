@@ -1,0 +1,10 @@
+2024-01-21 16:04:26,799 WARN [main] o.s.b.t.j.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [DuplicateJsonObjectContextCustomizerFactory.java:78] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/D:/Maven/apache-maven-3.9.2-bin/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/D:/Maven/apache-maven-3.9.2-bin/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-01-21 16:04:30,362 WARN [main] LoggerTests [LoggerTests.java:22] warn log
