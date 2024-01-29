@@ -43,3 +43,41 @@
 2024-01-29 14:25:23,439 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
 2024-01-29 14:25:23,440 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2024] {dataSource-1} closing ...
 2024-01-29 14:25:23,443 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2096] {dataSource-1} closed
+2024-01-29 14:25:34,535 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:55] Starting communityApplication using Java 1.8.0_281 on DESKTOP-6O517MT with PID 36444 (I:\pro_code\Java\niukeWeb\target\classes started by Administrator in I:\pro_code\Java\niukeWeb)
+2024-01-29 14:25:34,539 INFO [main] c.n.c.communityApplication [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-29 14:25:36,345 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2024-01-29 14:25:36,356 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:25:36,357 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-01-29 14:25:36,358 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2024-01-29 14:25:36,447 INFO [main] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-01-29 14:25:36,447 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:289] Root WebApplicationContext: initialization completed in 1852 ms
+2024-01-29 14:25:36,640 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2024-01-29 14:25:36,800 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:983] {dataSource-1} inited
+2024-01-29 14:25:37,576 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-29 14:25:37,664 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2024-01-29 14:25:37,818 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:25:37,838 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/community'
+2024-01-29 14:25:37,849 INFO [main] c.n.c.communityApplication [StartupInfoLogger.java:61] Started communityApplication in 3.829 seconds (JVM running for 4.692)
+2024-01-29 14:26:03,885 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 14:26:03,887 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2024-01-29 14:26:03,889 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 2 ms
+2024-01-29 15:25:56,530 INFO [main] TransactionTests [StartupInfoLogger.java:55] Starting TransactionTests using Java 1.8.0_281 on DESKTOP-6O517MT with PID 15084 (started by Administrator in I:\pro_code\Java\niukeWeb)
+2024-01-29 15:25:56,541 INFO [main] TransactionTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-29 15:25:58,175 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2024-01-29 15:25:58,448 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:983] {dataSource-1} inited
+2024-01-29 15:25:59,989 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-29 15:26:00,193 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2024-01-29 15:26:00,623 INFO [main] TransactionTests [StartupInfoLogger.java:61] Started TransactionTests in 4.784 seconds (JVM running for 5.904)
+2024-01-29 15:26:02,213 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-29 15:26:02,224 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2024] {dataSource-1} closing ...
+2024-01-29 15:26:02,239 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2096] {dataSource-1} closed
+2024-01-29 15:37:57,210 INFO [main] TransactionTests [StartupInfoLogger.java:55] Starting TransactionTests using Java 1.8.0_281 on DESKTOP-6O517MT with PID 10512 (started by Administrator in I:\pro_code\Java\niukeWeb)
+2024-01-29 15:37:57,218 INFO [main] TransactionTests [SpringApplication.java:675] No active profile set, falling back to default profiles: default
+2024-01-29 15:37:58,705 INFO [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java:56] Init DruidDataSource
+2024-01-29 15:37:58,949 INFO [main] c.a.d.p.DruidDataSource [DruidDataSource.java:983] {dataSource-1} inited
+2024-01-29 15:38:00,460 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-29 15:38:00,655 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2024-01-29 15:38:01,049 INFO [main] TransactionTests [StartupInfoLogger.java:61] Started TransactionTests in 4.416 seconds (JVM running for 5.328)
+2024-01-29 15:38:01,838 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-29 15:38:01,840 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2024] {dataSource-1} closing ...
+2024-01-29 15:38:01,852 INFO [SpringContextShutdownHook] c.a.d.p.DruidDataSource [DruidDataSource.java:2096] {dataSource-1} closed
