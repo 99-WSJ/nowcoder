@@ -4,6 +4,9 @@ import lombok.Data;
 
 import java.util.Date;
 
+/**
+ * 帖子实体类
+ */
 @Data
 public class DiscussPost {
     private int id;

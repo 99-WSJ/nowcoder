@@ -72,17 +72,21 @@ public class SensitiveFilter {
      * @return 过滤后的文本
      */
     public String filter(String text){
+        // 判断文本是否为空,如果为空，直接返回null
         if(StringUtils.isBlank(text)){
             return null;
         }
+        // 需要3个指针，指针1 指向树，指针2 指向字符串(正在扫描的字符串)的开头，指针3 指向字符串的结尾
         // 指针1：指向树,默认指向根节点
         TrieNode tempNode = rootNode;
         // 指针2：指向字符串的开头
         int begin = 0;
         // 指针3：最后指向最后的结果
         int position = 0;
+        // 存放最终过滤的结果
         StringBuilder sb=new StringBuilder();
 
+        // 当指针3没有走到最后的时候，就一直循环
         while(position<text.length()){
             // 取到当前位置的字符
             char c = text.charAt(position);
@@ -132,6 +136,7 @@ public class SensitiveFilter {
         // 如果返回为true，说明是一个符号
         return !CharUtils.isAsciiAlphanumeric(c) && (c<0x2E80 || c>0x9FFF);
     }
+
     /**
      * 前缀树
      * 内部类

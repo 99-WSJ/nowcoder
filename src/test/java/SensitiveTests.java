@@ -16,7 +16,7 @@ public class SensitiveTests {
 
     @Test
     public void testSensitiveFilter(){
-        String text="这里可以赌@博，可以嫖@娼，可以吸@毒，可以开@票，哈哈哈";
+        String text="这里可以赌@博了，可以嫖@娼，可以吸@毒，可以开@票，哈哈哈";
         text=sensitiveFilter.filter(text);
         System.out.println(text);
     }
