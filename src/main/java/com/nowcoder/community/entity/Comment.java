@@ -11,6 +11,7 @@ import java.util.Date;
 public class Comment {
     private int id;
     private int userId;
+    // 实体的类型
     private int entityType;
     private int entityId;
     private int targetId;

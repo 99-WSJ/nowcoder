@@ -21,10 +21,17 @@ public interface CommentMapper {
     List<Comment> selectCommentsByEntity(int entityType, int entityId, int offset, int limit);
 
     /**
-     * 查询评论的数量
+     * 查询评论的数量,根据不同的评论的类型 和
      * @param entityType
      * @param entityId
      * @return
      */
-    int SelectCountByEntity(int entityType, int entityId);
+    int selectCountByEntity(int entityType, int entityId);
+
+    /**
+     * 插入评论
+     * @param comment
+     * @return
+     */
+    int insertComment(Comment comment);
 }

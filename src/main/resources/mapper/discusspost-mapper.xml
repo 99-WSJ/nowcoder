@@ -34,15 +34,21 @@
         </if>
     </select>
 
-    <insert id="insertDiscussPost" parameterType="com.nowcoder.community.entity.DiscussPost">
+    <insert id="insertDiscussPost" parameterType="com.nowcoder.community.entity.DiscussPost" keyProperty="id">
         insert into discuss_post (<include refid="insertFields"/>) values
         (#{userId}, #{title}, #{content}, #{type}, #{status}, #{createTime}, #{commentCount}, #{score})
     </insert>
 
     <select id="selectDiscussPostById" resultType = "com.nowcoder.community.entity.DiscussPost">
-    select <include refid = "selectFields"></include>
-    from discuss_post
-    where id= #{id}
+        select <include refid = "selectFields"></include>
+        from discuss_post
+        where id= #{id}
     </select>
+
+    <update id="updateCommentCount">
+        update discuss_post
+        set comment_count=#{commentCount}
+        where id =#{id}
+    </update>
 
 </mapper>
