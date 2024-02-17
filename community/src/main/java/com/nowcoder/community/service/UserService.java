@@ -115,8 +115,9 @@ public class UserService implements CommunityConstant {
         } else if (user.getActivationCode().equals(code) ){
             userMapper.updateStatus(userId, 1);
             return ACTIVATION_SUCCESS;
-        } else
+        } else {
             return ACTIVATION_FAILURE;
+        }
     }
 
     // md5 一样，解码之后的密码一样
@@ -174,6 +175,11 @@ public class UserService implements CommunityConstant {
     // 更新用户头像url
     public int updateHeader(int userId, String headerUrl) {
         return userMapper.updateHeader(userId, headerUrl);
+    }
+
+
+    public User findUserByName(String username) {
+        return userMapper.selectByName(username);
     }
 
 

@@ -6,4 +6,7 @@ public interface CommunityConstant {
     int ACTIVATION_FAILURE=2;  // 激活失败
     int DEFAULT_EXPIRED_SECONDS = 3600 * 12;  //默认状态的登陆凭证的超时时间 12h
     int REMEMBERME_EXPIRED_SECONDS = 3600 * 24 * 10; //记录状态的登陆凭证超时时间 10天
+    int ENTITY_TYPE_POST=1;
+    int ENTITY_TYPE_COMMENT=2;
+
 }

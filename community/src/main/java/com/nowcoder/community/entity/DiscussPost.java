@@ -11,12 +11,12 @@ public class DiscussPost {
 
     private int id;
     private int userId;
-    private String tittle;
+    private String title;
     private String content;
     private int type;
     private int status;
     private Date createTime;
-    private int commonCount;
+    private int commentCount;
     private double score;
 
     public int getId() {
@@ -35,12 +35,12 @@ public class DiscussPost {
         this.userId = userId;
     }
 
-    public String getTittle() {
-        return tittle;
+    public String getTitle() {
+        return title;
     }
 
-    public void setTittle(String tittle) {
-        this.tittle = tittle;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getContent() {
@@ -75,12 +75,12 @@ public class DiscussPost {
         this.createTime = createTime;
     }
 
-    public int getCommonCount() {
-        return commonCount;
+    public int getCommentCount() {
+        return commentCount;
     }
 
-    public void setCommonCount(int commonCount) {
-        this.commonCount = commonCount;
+    public void setCommentCount(int commentCount) {
+        this.commentCount = commentCount;
     }
 
     public double getScore() {
@@ -96,12 +96,12 @@ public class DiscussPost {
         return "DiscussPost{" +
                 "id=" + id +
                 ", userId=" + userId +
-                ", tittle='" + tittle + '\'' +
+                ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", type=" + type +
                 ", status=" + status +
                 ", createTime=" + createTime +
-                ", commonCount=" + commonCount +
+                ", commentCount=" + commentCount +
                 ", score=" + score +
                 '}';
     }
