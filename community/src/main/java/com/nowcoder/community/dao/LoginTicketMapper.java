@@ -4,6 +4,8 @@ import com.nowcoder.community.entity.LoginTicket;
 import org.apache.ibatis.annotations.*;
 
 @Mapper
+// deprecated 废弃，不推荐使用
+@Deprecated
 public interface LoginTicketMapper {
 
     //这样不用配置mapper.xml文件，进行sql操作,也可以进行动态SQL
