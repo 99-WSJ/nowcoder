@@ -1,5 +1,10 @@
 package com.nowcoder.community.entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
+import org.springframework.data.elasticsearch.annotations.FieldType;
+
 import java.util.Date;
 
 /**
@@ -7,16 +12,35 @@ import java.util.Date;
  * @description
  * @date 2024年01月21日 15:38
  */
+@Document(indexName = "discusspost", type = "_doc", shards = 6, replicas = 3)
 public class DiscussPost {
 
+    @Id
     private int id;
+
+    @Field(type = FieldType.Integer)
     private int userId;
-    private String tittle;
+
+    // 互联网校招
+    @Field(type = FieldType.Text, analyzer = "ik_max_word", searchAnalyzer = "ik_smart")
+    private String title;
+
+    @Field(type = FieldType.Text, analyzer = "ik_max_word", searchAnalyzer = "ik_smart")
     private String content;
+
+    @Field(type = FieldType.Integer)
     private int type;
+
+    @Field(type = FieldType.Integer)
     private int status;
+
+    @Field(type = FieldType.Date)
     private Date createTime;
-    private int commonCount;
+
+    @Field(type = FieldType.Integer)
+    private int commentCount;
+
+    @Field(type = FieldType.Double)
     private double score;
 
     public int getId() {
@@ -35,12 +59,12 @@ public class DiscussPost {
         this.userId = userId;
     }
 
-    public String getTittle() {
-        return tittle;
+    public String getTitle() {
+        return title;
     }
 
-    public void setTittle(String tittle) {
-        this.tittle = tittle;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getContent() {
@@ -75,12 +99,12 @@ public class DiscussPost {
         this.createTime = createTime;
     }
 
-    public int getCommonCount() {
-        return commonCount;
+    public int getCommentCount() {
+        return commentCount;
     }
 
-    public void setCommonCount(int commonCount) {
-        this.commonCount = commonCount;
+    public void setCommentCount(int commentCount) {
+        this.commentCount = commentCount;
     }
 
     public double getScore() {
@@ -96,12 +120,12 @@ public class DiscussPost {
         return "DiscussPost{" +
                 "id=" + id +
                 ", userId=" + userId +
-                ", tittle='" + tittle + '\'' +
+                ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", type=" + type +
                 ", status=" + status +
                 ", createTime=" + createTime +
-                ", commonCount=" + commonCount +
+                ", commentCount=" + commentCount +
                 ", score=" + score +
                 '}';
     }
