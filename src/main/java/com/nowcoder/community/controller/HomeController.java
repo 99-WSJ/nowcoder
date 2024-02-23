@@ -1,6 +1,8 @@
 package com.nowcoder.community.controller;
 
 import com.nowcoder.community.entity.Page;
+import com.nowcoder.community.service.LikeService;
+import com.nowcoder.community.util.CommunityConstant;
 import org.springframework.ui.Model;
 import com.nowcoder.community.entity.DiscussPost;
 import com.nowcoder.community.service.DiscussPostService;
@@ -15,12 +17,15 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-public class HomeController {
+public class HomeController implements CommunityConstant {
     @Autowired
     private DiscussPostService discussPostService;
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private LikeService likeService;
 
     /**
      * 通过Model对象向模板传递数据,在模板中可以通过${}来获取
@@ -43,6 +48,11 @@ public class HomeController {
                 Map<String,Object> map = new HashMap<>();
                 map.put("post",post); // 帖子
                 map.put("user",userService.findUserById(post.getUserId())); // 发帖人 user
+
+                // 点赞数量
+                long likeCount = likeService.findEntityLikeCount(ENTITY_TYPE_POST, post.getId());
+                map.put("likeCount",likeCount);
+
                 discussPosts.add(map);
             }
         }
